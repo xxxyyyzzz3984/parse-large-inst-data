@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xyh3984/CC++Codes/InstAnalysis/fileanalysis.cpp
+fileanalysis.h
+/home/xyh3984/CC++Codes/InstAnalysis/fileanalysis.h
+
+/home/xyh3984/CC++Codes/InstAnalysis/fileanalysis.h
+iostream
+-
+algorithm
+-
+boost/iostreams/device/mapped_file.hpp
+-
+vector
+-
+sstream
+-
+
+/home/xyh3984/CC++Codes/InstAnalysis/main.cpp
+iostream
+-
+algorithm
+-
+string
+-
+vector
+-
+sstream
+-
+fstream
+-
+fileanalysis.h
+/home/xyh3984/CC++Codes/InstAnalysis/fileanalysis.h
+

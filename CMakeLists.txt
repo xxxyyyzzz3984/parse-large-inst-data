@@ -1,0 +1,15 @@
+project(InstAnalysis)
+cmake_minimum_required(VERSION 2.8)
+aux_source_directory(. SRC_LIST)
+find_package (Threads)
+
+set(Boost_USE_STATIC_LIBS ON) 
+set(Boost_USE_MULTITHREADED ON)  
+set(Boost_USE_STATIC_RUNTIME ON)
+
+find_package(Boost REQUIRED COMPONENTS system iostreams) 
+include_directories(${Boost_INCLUDE_DIRS})
+add_executable(${PROJECT_NAME} ${SRC_LIST})
+target_compile_features(InstAnalysis PUBLIC cxx_range_for)
+target_link_libraries (InstAnalysis ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(InstAnalysis ${Boost_LIBRARIES})
